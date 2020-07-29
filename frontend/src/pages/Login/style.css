@@ -1,0 +1,29 @@
+body{
+    width: ' 100%';
+    height: '100%';
+    background: #F7C6C6;
+    background-repeat: no-repeat;
+}
+.mainContainer {
+    height: 100vh; /* Magic here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainContainer form{
+    display: flex;
+    flex-direction: column;
+    background-color: ivory;
+    border-radius: 6px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.35);
+    box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.35);
+}
+.LoginTitle {
+    color: #969696;
+}
+.Logo{
+    margin-bottom: 40px;
+}

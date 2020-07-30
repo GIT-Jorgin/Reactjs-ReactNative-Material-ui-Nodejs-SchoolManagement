@@ -1,8 +1,5 @@
-﻿<<<<<<< HEAD
 ﻿﻿# Aplicação para gestão acadêmica com Reactjs, Material-ui framework, React-Native e Nodejs
-=======
-﻿# Aplicação para gestão acadêmica com Reactjs, Material-ui framework, React-Native e Nodejs
->>>>>>> 474eb6c07152862bb68cbd761078fa0a9b3510f4
+
 
  - [x] Frontend WEB
  - [ ] Frontend MOBILE

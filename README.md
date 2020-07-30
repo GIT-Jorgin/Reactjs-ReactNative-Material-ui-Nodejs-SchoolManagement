@@ -1,6 +1,5 @@
 ﻿﻿# Aplicação para gestão acadêmica com Reactjs, Material-ui framework, React-Native e Nodejs
 
-
  - [x] Frontend WEB
  - [ ] Frontend MOBILE
  - [ ] Backend

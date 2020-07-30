@@ -16,7 +16,7 @@ INICIO (*Discente*)
 
 DOCUMENTOS (*Discente*)
 
-![Documentos postados pela instituição](https://i.imgur.com/GmF5T2p.png)
+![Documentos postados pela instituição](https://i.imgur.com/pRvl5DZ.png)
 
 ARQUIVOS (*Discente*)
 
@@ -24,7 +24,7 @@ ARQUIVOS (*Discente*)
 
 NOTAS (*Discente*)
 
-    EM BREVE
+![Notas dos discentes em cada disciplina](https://i.imgur.com/r5MxFak.png)
 
 FINANCEIRO (*Discente*)
 

@@ -228,10 +228,10 @@ export default function Documentos(props) {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.navTitle} variant="h6">
-            <HomeOutlinedIcon style={{
+            <InsertChartTwoToneIcon style={{
               fontSize: 23, verticalAlign: 'middle',
               position: 'relative', top: -2
-            }} /> Documentos
+            }} /> Notas
             </Typography>
             <div>
               <IconButton

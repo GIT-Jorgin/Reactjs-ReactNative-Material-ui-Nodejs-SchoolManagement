@@ -229,10 +229,10 @@ export default function Aluno(props) {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.navTitle} variant="h6">
-            <HomeOutlinedIcon style={{
+            <FolderOpenTwoToneIcon style={{
               fontSize: 23, verticalAlign: 'middle',
               position: 'relative', top: -2
-            }} /> Inicio
+            }} /> Arquivos
             </Typography>
             <div>
               <IconButton

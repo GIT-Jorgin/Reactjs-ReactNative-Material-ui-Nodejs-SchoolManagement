@@ -167,13 +167,13 @@ export default function Documentos(props) {
           <ListItemIcon>
             <HomeTwoToneIcon />
           </ListItemIcon>
-          <ListItemText style={{ color: '#8000FF' }} primary="Inicio" />
+          <ListItemText primary="Inicio" />
         </ListItem>
         <ListItem style={{ background: 'linear-gradient(to right, #E6CCFF, #FFF)' }} button>
           <ListItemIcon>
             <InsertDriveFileTwoToneIcon style={{ color: '#8000FF' }} />
           </ListItemIcon>
-          <ListItemText primary="Documentos" />
+          <ListItemText style={{ color: '#8000FF' }} primary="Documentos" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
@@ -225,7 +225,7 @@ export default function Documentos(props) {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.navTitle} variant="h6">
-            <HomeOutlinedIcon style={{
+            <InsertDriveFileTwoToneIcon style={{
               fontSize: 23, verticalAlign: 'middle',
               position: 'relative', top: -2
             }} /> Documentos

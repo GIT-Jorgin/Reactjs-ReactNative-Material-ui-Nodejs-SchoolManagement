@@ -1,5 +1,4 @@
 import React from 'react';
-import { FilledInput } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import UAPP from '../../src/UAPP.png'
@@ -17,7 +16,7 @@ export default function Login(){
     return(
         <div className="mainContainer">
             <div className="Logo">
-              <img width="300" src={UAPP} />
+              <img alt="logo" width="300" src={UAPP} />
             </div>
             <form noValidate autoComplete="off">
                 <h4 className="LoginTitle">Login</h4>

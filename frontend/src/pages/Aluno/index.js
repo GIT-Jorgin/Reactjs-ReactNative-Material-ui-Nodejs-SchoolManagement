@@ -1,20 +1,14 @@
 import React from 'react';
-import { FilledInput } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
-import PropTypes from 'prop-types';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import InsertChartTwoToneIcon from '@material-ui/icons/InsertChartTwoTone';
 import ErrorRoundedIcon from '@material-ui/icons/ErrorRounded';
+import { useHistory } from "react-router-dom";
 import IconButton from '@material-ui/core/IconButton';
 import Card from '@material-ui/core/Card';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import AssignmentLateOutlinedIcon from '@material-ui/icons/AssignmentLateOutlined';
-import AssignmentLateTwoToneIcon from '@material-ui/icons/AssignmentLateTwoTone';
 import AndroidOutlinedIcon from '@material-ui/icons/AndroidOutlined';
 import ChatRoundedIcon from '@material-ui/icons/ChatRounded';
 import AppleIcon from '@material-ui/icons/Apple';
@@ -26,7 +20,6 @@ import RoomTwoToneIcon from '@material-ui/icons/RoomTwoTone';
 import FolderOpenTwoToneIcon from '@material-ui/icons/FolderOpenTwoTone';
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import SmsRoundedIcon from '@material-ui/icons/SmsRounded';
 import List from '@material-ui/core/List';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -39,8 +32,6 @@ import Avatar from '@material-ui/core/Avatar';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
-import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import UAPP from '../../src/UAPP.png'
@@ -76,9 +67,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       display: 'none',
     },
-  },
-  accountIMG: {
-
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
@@ -123,6 +111,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Aluno(props) {
+  const History = useHistory();
   const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -143,7 +132,7 @@ export default function Aluno(props) {
   };
   const drawer = (
     <div>
-      <img className="LogoDrawer" width="200" src={UAPP} />
+      <img alt="logo" className="LogoDrawer" width="200" src={UAPP} />
       <div className={classes.toolbar} />
 
       <Divider />
@@ -154,25 +143,25 @@ export default function Aluno(props) {
           </ListItemIcon>
           <ListItemText style={{ color: '#8000FF' }} primary="Inicio" />
         </ListItem>
-        <ListItem button>
+        <ListItem onClick={() => History.push('/documentos')} button>
           <ListItemIcon>
             <InsertDriveFileTwoToneIcon />
           </ListItemIcon>
           <ListItemText primary="Documentos" />
         </ListItem>
-        <ListItem button>
+        <ListItem onClick={() => History.push('/arquivos')} button>
           <ListItemIcon>
             <FolderOpenTwoToneIcon />
           </ListItemIcon>
           <ListItemText primary="Arquivos" />
         </ListItem>
-        <ListItem button>
+        <ListItem onClick={() => History.push('/notas')} button>
           <ListItemIcon>
             <InsertChartTwoToneIcon />
           </ListItemIcon>
           <ListItemText primary="Notas" />
         </ListItem>
-        <ListItem button>
+        <ListItem onClick={() => History.push('/financeiro')} button>
           <ListItemIcon>
             <AccountBalanceTwoToneIcon />
           </ListItemIcon>
@@ -463,11 +452,4 @@ export default function Aluno(props) {
     </div>
   );
 
-  Aluno.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window: PropTypes.func,
-  };
 }

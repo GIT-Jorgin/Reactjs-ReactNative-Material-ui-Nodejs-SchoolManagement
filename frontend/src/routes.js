@@ -6,6 +6,7 @@ import Aluno from './pages/Aluno';
 import Documentos from './pages/Documentos';
 import Arquivos from './pages/Arquivos';
 import Notas from './pages/Notas';
+import Financeiro from './pages/Financeiro';
 
 export default function Routes() {
     return (
@@ -16,6 +17,7 @@ export default function Routes() {
                 <Route path="/documentos" component={Documentos} />
                 <Route path="/arquivos" component={Arquivos} />
                 <Route path="/notas" component={Notas} />
+                <Route path="/financeiro" component={Financeiro} />
             </Switch>
         </BrowserRouter>
     );

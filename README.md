@@ -26,7 +26,7 @@ NOTAS (*Discente*)
 
 FINANCEIRO (*Discente*)
 
-    EM BREVE
+![Área financeira](https://i.imgur.com/nRozpVe.png)
     
 HORÁRIO (*Discente*)
 
